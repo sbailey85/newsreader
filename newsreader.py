@@ -47,7 +47,7 @@ class Termnews:
 			for x in p['items']:
 				z = x['link']
 				desc = x['description']
-				o = { {'title': z ,'description': desc}}
+				o =  {'title': z ,'description': desc}
 				self.d[z] = o
 	
 		

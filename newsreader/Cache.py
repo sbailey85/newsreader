@@ -126,12 +126,4 @@ class GetCache:
         #self.ti = d[self.cache_dir]['time']
 
 
-class Cached_Object:
-    def __init___(self,f):
-        
-        d = shelve.open(f,'r')
-        self.links = d.items()
-    
-        selr.link = d[f]['url']     
-        
-        
+

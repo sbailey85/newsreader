@@ -8,7 +8,7 @@ import urllib2
 import shelve
 import urllib2
 
-from cache import *
+from newsreader import *
 
 app_home = os.path.expanduser("~")+'/.newsreader/'
 
@@ -30,10 +30,6 @@ def get_md5(string):
 	m  = hashlib.md5('string')
 	return m.hexdigest()		
 	
-
-	
-
-	
 def add_feed(feed):
 	
 	if not os.path.exists(app_home):
@@ -44,7 +40,6 @@ def add_feed(feed):
 	f.write(feed+'\n')
 	f.close()
 	return
-
 
 def main():
 	
